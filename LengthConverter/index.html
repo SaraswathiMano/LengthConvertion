@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Length Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <!-- <h1 id="message"></h1>
+     <h4 id="operation"></h4> -->
+     <div class="wrapper">
+        <h2>CM TO INCHES & METERS</h2>
+        <div class="inputdiv">
+          <input type="number" id="value" placeholder="Enter the value in CM" class="center">
+        </div>
+        <div class="result">
+            <button type="submit" onclick="Convert1()">Convert To INCHES</button>
+            <button type="submit" onclick="Convert2()">Convert To METER</button>
+        </div>
+        <div id="result"></div>
+    </div>
+
+
+
+    <script>
+      /*const message=document.getElementById("message");
+      message.innerHTML="Welcome To JavaScript"
+      const work=document.getElementById("operation")
+      work.innerHTML="You are goint to create a length converter"*/
+      function Convert1()
+      {
+      const cm=Number(document.getElementById("value").value);
+      const inch=cm/2.54;
+      const result=document.getElementById("result");
+      result.innerHTML=inch.toFixed(3)+"inches";
+      }
+      function Convert2()
+      {
+      const cm=Number(document.getElementById("value").value);
+      const inch=cm/100;
+      const result=document.getElementById("result");
+      result.innerHTML=inch.toFixed(3)+"meters";
+      }
+    </script>
+</body>
+</html>

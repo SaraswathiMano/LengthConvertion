@@ -1,0 +1,129 @@
+*{
+    margin:0px;
+    padding:0px;
+
+}
+body{
+    background-color: #f5e8ba;
+    margin:10rem;
+    align-items: center;
+    font-family:'poppins',sans-serif;
+}
+.wrapper div,.wrapper h2{
+    display:flex;
+    justify-content: center;
+}
+h2{
+    color:white;
+    letter-spacing: .5px;
+}
+input{
+    border-radius: 5px;
+    border:2px solid black;
+    margin-top: 30px;
+    height: 2.5rem;
+    width:250px;
+    padding-left: 10px;
+    font-size: medium;
+}
+.center{
+    text-align: center;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button
+{
+    -webkit-appearance:none;
+    margin:0;
+}
+input:active{
+    border:none;
+}
+.wrapper{
+    height: 300px;
+    width: 500px;;
+    margin: 100px auto ;
+    background-color: #1f2029;
+    padding:3rem;
+    border-radius: 20px;
+}
+.result{
+    display: flex;
+    gap:30px;
+}
+button{
+    margin-top: 3rem;
+    justify-items: center;
+    background-color: #ffeba7;
+    border-radius: 5px;
+    height: 2.5rem;
+    font-weight: 800;
+    padding:1px 30px;
+    /* animation:ease-in 1 */
+}
+
+button:hover{
+    cursor:pointer;
+    background-color: white;
+    animation:  3s ease-out;
+}
+#result{
+    color:white;
+    margin-top:30px;
+    font-size: 40px;
+}
+@media(max-width:768px){
+    .wrapper{
+        margin:50px auto;
+        width:90%;
+        /* background-color: #f5e8ba; */
+    }
+    button{
+        /* font-size: 10px; */
+        font-weight: 600;
+    }
+    #result{
+        font-size:20px;
+    }
+
+}
+@media(max-width:400px){
+    body{
+        margin:auto;
+    }
+    .wrapper{
+        margin:50px auto;
+        width:80%;
+    }
+    .wrapper h2{
+        text-align: center;
+    }
+   .result{
+    gap:5px;
+    display: flex;
+   }
+    button{
+        font-size: 10px;
+        font-weight: 500;
+        width:80px;
+        height: 40px;
+       text-align: center;
+    }
+    #result{
+        font-size:10px;
+    }
+    
+}
+@media(max-width:230px){
+    body{
+        margin:auto;
+    }
+    .wrapper h2{
+        text-align: center;
+    }
+    .wrapper{
+        margin:50px auto;
+        width:50%;
+    }
+   
+
+}
